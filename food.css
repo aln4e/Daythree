@@ -1,0 +1,38 @@
+.body_wrap{
+  display:flex;
+  text-align: center;
+  flex-flow: wrap;
+}
+
+.body_wrap ul{
+  text-align:left;
+}
+.header, .main, .main1, .main2, .main3, .aside1, .aside2, .footer{
+  flex: 1 100%;
+}
+.header{
+  background-color: #fbde86;
+}
+.main1{
+  background-color: #d22d2d;
+}
+.main2{
+  background-color: #d22d2d;
+}
+.main3{
+  background-color: #d22d2d;
+}
+.aside1{
+  background-color:#9fc55a;
+}
+.aside2{
+  background-color: #9fc55a;
+}
+.footer{
+  background-color: #76532f;
+}
+@media all and (min-width:600px){
+  .aside {flex: 1 50%;}
+
+  .main { flex: 1 auto}
+}

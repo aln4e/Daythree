@@ -1,0 +1,56 @@
+.ani_cloud{
+  animation-name: rain;
+  animation-duration: 25s;
+  animation-fill-mode: none;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease-out;
+}
+
+@keyframes rain{
+  0% {transform: translateX(-50px);}
+  100% {transform: translateX(2000px);}
+}
+
+.angry_cloud {
+  animation-name: lightning;
+  animation-duration: 17s;
+  animation-fill-mode: none;
+  animation-iteration-count:infinite;
+  animation-timing-function: ease-in;
+}
+
+@keyframes lightning {
+  0% {transform: translateX(2000px);}
+  33% {transform: translatex(667px) rotate(-.1turn);}
+  67% {transform: translatex(1333px) rotate(.1turn);}
+  100% {transform:translateX(-250px);}
+}
+
+.ani_car {
+  animation-name: drive;
+  animation-duration: 10s;
+  animation-timing-function: ease-in;
+  animation-iteration-count:infinite;
+
+}
+.ani_car:hover{
+  animation-play-state: paused;
+}
+
+@keyframes drive {
+  0% {transform: translatex(0px);}
+  33% {transform: translatex(667px) rotate(-.1turn);}
+  67% {transform: translatex(1333px) rotate(0turn);}
+  100% {transform: translatex(2000px);}
+}
+
+@keyframes icons {
+  0% {transform: translateY(0px);}
+  100% {transform: translatey(25px) rotatey(.1turn);}
+}
+
+.apple:hover {
+ animation-name: icons;
+ animation-duration: 1s;
+ animation-fill-mode: forwards;
+}
